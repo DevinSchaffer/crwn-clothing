@@ -6,16 +6,16 @@ import { selectDirectorySections } from './directory.selectors';
 
 import MenuItem from '../menu-item/menu-item';
 
-import './directory.scss';
+import { DirectoryContainer } from './directory.styles';
 
 const Directory = ({ sections }) => (
-  <div className='directory-menu'>
+  <DirectoryContainer>
     {
       sections.map(({ id, ...sectionProps }) => (
         <MenuItem key={id} {...sectionProps} />
       ))
     }
-  </div>
+  </DirectoryContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
