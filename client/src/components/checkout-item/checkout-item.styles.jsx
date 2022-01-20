@@ -21,6 +21,7 @@ export const ImageContainer = styled.div`
 
 export const TextContainer = styled.span`
   width: 23%;
+  margin-right: 5px;
 `;
 
 export const QuantityContainer = styled(TextContainer)`
@@ -34,6 +35,6 @@ export const QuantityContainer = styled(TextContainer)`
 `;
 
 export const RemoveButtonContainer = styled.div`
-  padding-left: 12px;
+  padding: 0 8px 0 8px;
   cursor: pointer;
 `;

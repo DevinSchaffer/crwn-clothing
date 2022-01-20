@@ -7,6 +7,7 @@ export const CollectionItemContainer = styled.div`
 	height: 350px;
 	align-items: center;
 	position: relative;
+	margin-bottom: 20px;
 
 	.image {
 		width: 100%;
@@ -50,4 +51,8 @@ export const CollectionItemContainer = styled.div`
 			width: 10%;
 		}
 	}
+
+	@media screen and (max-width: 800px) {
+        width: 40vw;
+    }
 `;
